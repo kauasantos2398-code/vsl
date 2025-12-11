@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Benefits Portal - Claim Your Funds</title>
+    <meta name="description" content="Watch the video to claim your approved benefits">
+
+    <!--SCRIPTS-->
+    <script src="js/latest.js" data-utmify-prevent-subids="" data-utmify-fast-start="" async="" defer=""></script>
+    <!-- Meta Pixel Code -->
+
+    <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" data-utmify-ignore-iframe="" data-utmify-is-cartpanda="" async="" defer=""></script>
+    <script>
+      window.pixelId = "67d9b32ae161fb9cdd2bc3a0";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script><script async="" defer="" src="js/pixel.js"></script>
+
+    <!--preload-->
+<script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+<link rel="preload" href="https://scripts.converteai.net/6f77653e-f9e8-4faa-95e2-321f656df389/players/68a7ae1689952a2b325b6267/v4/player.js" as="script">
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/6f77653e-f9e8-4faa-95e2-321f656df389/68a7a90db21d1aabc19b2124/main.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <!--end preload-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/player.js" async=""></script></head>
+  <body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Header -->
+
+    <header class="bg-white border-b border-gray-200 py-6 max-md:py-2">
+        
+      <div class="w-[98%] mx-auto max-md:w-[95%]">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-3">
+            <img src="images/us-flag.png" alt="U.S. Flag" class="w-10 h-auto">
+            <div>
+              <h1 class="text-xl font-bold text-gray-800 mb-1">
+                U.S. Benefits Portal
+              </h1>
+              <p class="text-sm text-gray-500">Department of Public Services</p>
+            </div>
+          </div>
+          <div class="text-right">
+            <div class="text-4xl font-bold text-green-600 mb-1" id="claimAmountHeader">$2,730</div>
+            <div class="text-sm text-gray-500 font-medium">Your Claim</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="w-[100%] mx-auto">
+      <!-- Alert Banner -->
+      <div class="bg-red-600 text-white py-4">
+        <div class="flex items-center gap-3 font-semibold text-lg">
+          <span class="text-2xl">⚡</span>
+          <span>Claim Expires Soon</span>
+        </div>
+      </div>
+
+      <!-- Claim Info Box -->
+      <div class="bg-green-50 border-2 border-green-200 rounded-xl mb-2 p-2 flex justify-between items-center">
+        <div class="flex items-center gap-4 max-md:gap-2">
+          <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+            ✓
+          </div>
+          <div class="text-green-600 font-semibold max-md:text-base">
+            <div class="text-2xl mb-2 max-md:text-lg" id="claimAmountBox">$2,730 Approved</div>
+            <div class="text-base max-md:text-sm" id="phoneText">Name: *************</div>
+          </div>
+        </div>
+        <div class="bg-green-100 text-green-600 px-6 py-3 rounded-full text-sm font-bold uppercase border-2 border-green-200">
+          VERIFIED
+        </div>
+      </div>
+
+      <!-- Video CTA -->
+      <div class="text-center max-md:text-xl text-2xl font-semibold text-gray-800 mb-2 p-2 bg-white">
+        Watch this video to claim your
+        <span id="claimAmountCTA" class="text-green-600">$2,730</span>
+      </div>
+
+      <!-- Video Section -->
+      <div class="bg-white rounded-xl p-2 mb-8 text-center">
+<vturb-smartplayer id="vid-68a7ae1689952a2b325b6267" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/6f77653e-f9e8-4faa-95e2-321f656df389/players/68a7ae1689952a2b325b6267/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+      </div>
+
+      <!-- Footer Warning -->
+      <div class="bg-amber-50 p-6 text-center">
+        <div class="text-4xl mb-4">⚠️</div>
+        <div class="text-amber-800 text-lg font-semibold leading-relaxed">
+          Important: YOU must watch the entire video to receive your funds.
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // DOM Elements
+      const claimAmountHeader = document.getElementById("claimAmountHeader");
+      const claimAmountBox = document.getElementById("claimAmountBox");
+      const claimAmountCTA = document.getElementById("claimAmountCTA");
+      const phoneText = document.getElementById("phoneText");
+      const videoPlayer = document.getElementById("videoPlayer");
+
+      // Get claim data from localStorage (set by funil.html)
+      function getClaimData() {
+        // Get amount from localStorage
+        const storedAmount = localStorage.getItem("claimAmount");
+        const amount = storedAmount || "$2,730";
+
+        // Get phone from localStorage
+        const storedPhone = localStorage.getItem("userName");
+        const phone = storedPhone || "*************";
+
+        return { amount, phone };
+      }
+
+      // Video player functionality
+      function setupVideoPlayer() {
+        videoPlayer.addEventListener("click", function () {
+          // You can replace this with actual video functionality
+          this.innerHTML = `
+            <div class="flex flex-col items-center justify-center h-full text-white text-2xl">
+              🎥 Video Playing...<br>
+              <small class="text-base mt-4 opacity-80">(This is a placeholder)</small>
+            </div>
+          `;
+          this.classList.remove("");
+          this.style.background = "#059669";
+          this.style.cursor = "default";
+        });
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get claim data from localStorage
+        const { amount, phone } = getClaimData();
+
+        // Set claim amount in all locations
+        claimAmountHeader.textContent = amount;
+        claimAmountBox.textContent = `${amount} Approved`;
+        claimAmountCTA.textContent = amount;
+
+        // Set phone number
+        phoneText.textContent = `Name: ${phone}`;
+
+        // Setup video player
+        setupVideoPlayer();
+
+        // Add some interactivity
+        document.querySelectorAll(".bg-green-50").forEach((box) => {
+          box.addEventListener("mouseenter", function () {
+            this.classList.add("transform", "-translate-y-1", "shadow-lg");
+            this.style.transition = "all 0.3s ease";
+          });
+
+          box.addEventListener("mouseleave", function () {
+            this.classList.remove("transform", "-translate-y-1", "shadow-lg");
+          });
+        });
+      });
+    </script>
+  
+
+</body></html>
